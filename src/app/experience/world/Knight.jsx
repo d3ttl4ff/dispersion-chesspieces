@@ -10,11 +10,15 @@ const Knight = () => {
   const { nodes } = useGLTF('/knight.glb');
   const { viewport } = useThree();
 
-  useFrame((gl, delta) => {
-    knight.current.rotation.y -= delta * 0.8;
-  });
+  const textTweakProps = useControls(
+    'Text',
+    {
+      color: '#ffffff',
+    },
+    { collapsed: true, order: 1 }
+  );
 
-  const materialProps = useControls(
+  const materialTweakProps = useControls(
     'Knight',
     {
       chromaticAberration: {
@@ -82,17 +86,21 @@ const Knight = () => {
       },
       backside: { value: false },
     },
-    { collapsed: true, order: 1 }
+    { collapsed: true, order: 2 }
   );
+
+  useFrame((gl, delta) => {
+    knight.current.rotation.y -= delta * 0.8;
+  });
 
   useEffect(() => {
     if (knight.current) {
-      knight.current.material.side = materialProps.backside
+      knight.current.material.side = materialTweakProps.backside
         ? THREE.DoubleSide
         : THREE.FrontSide;
       knight.current.material.needsUpdate = true;
     }
-  }, [materialProps.backside]);
+  }, [materialTweakProps.backside]);
 
   return (
     <>
@@ -101,9 +109,9 @@ const Knight = () => {
           font="fonts/WTSkrappa.ttf"
           fontSize={0.6}
           position={[0, 0, -0.4]}
-          color={'#e2e8f0'}
           anchorX="center"
           anchorY="middle"
+          {...textTweakProps}
         >
           KNIGHTHOOD
         </Text>
@@ -115,7 +123,7 @@ const Knight = () => {
           material={nodes.Knight.material}
           scale={0.17}
         >
-          <MeshTransmissionMaterial {...materialProps} />
+          <MeshTransmissionMaterial {...materialTweakProps} />
         </mesh>
       </group>
     </>
