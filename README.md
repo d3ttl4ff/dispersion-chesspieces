@@ -2,7 +2,7 @@
 
 Chesspieces created with the `MeshStadardMaterial` React-three-fiber/Three.js.
 
-[!Thumbnail](./thumb.png)
+![Thumbnail](./thumb.png)
 
 ## Getting Started
 
