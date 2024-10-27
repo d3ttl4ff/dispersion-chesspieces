@@ -1,6 +1,6 @@
 # Dispersion Chesspieces
 
-Chesspieces created with the `MeshStadardMaterial` React-three-fiber/Three.js.
+Chesspieces created with the React-three-fiber/Three.js `MeshStadardMaterial`.
 
 ![Thumbnail](./thumb.png)
 
