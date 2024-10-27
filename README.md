@@ -1,6 +1,6 @@
 # Dispersion Chesspieces
 
-Chesspieces created with the React-three-fiber/Three.js `MeshStadardMaterial`.
+Chesspieces created with the React-three-fiber/Three.js `MeshTransmissionMaterial`.
 
 Live: [Dispersion Chesspieces](https://dispersion-chesspieces.vercel.app/)
 
