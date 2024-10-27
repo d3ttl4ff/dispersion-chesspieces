@@ -10,7 +10,9 @@ Live: [Dispersion Chesspieces](https://dispersion-chesspieces.vercel.app/)
 
 ```bash
 https://github.com/d3ttl4ff/dispersion-chesspieces.git
+```
 
+```bash
 npm install
 ```
 
