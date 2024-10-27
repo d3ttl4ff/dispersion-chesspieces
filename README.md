@@ -9,7 +9,7 @@ Live: [Dispersion Chesspieces](https://dispersion-chesspieces.vercel.app/)
 ## Getting Started
 
 ```bash
-https://github.com/d3ttl4ff/dispersion-chesspieces.git
+git clone https://github.com/d3ttl4ff/dispersion-chesspieces.git
 ```
 
 ```bash
