@@ -2,6 +2,8 @@
 
 Chesspieces created with the React-three-fiber/Three.js `MeshStadardMaterial`.
 
+Live: [Dispersion Chesspieces](https://dispersion-chesspieces.vercel.app/)
+
 ![Thumbnail](./thumb.png)
 
 ## Getting Started
