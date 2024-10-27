@@ -39,7 +39,7 @@ const Knight = () => {
         pad: 2,
       },
       roughness: {
-        value: 0.38,
+        value: 0.16,
         min: 0,
         max: 1,
         step: 0.001,
